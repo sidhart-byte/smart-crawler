@@ -1,8 +1,11 @@
-# Generated data and logs
-data/
+# Generated data and logs - but keep important files
 logs/
-*.json
 *.log
+
+# Ignore most generated JSON files, but keep important ones
+*.json
+!data/final_complete_alba_cars_focused.json
+!data/extraction_plan_first_10_cars.json
 
 # Python
 __pycache__/

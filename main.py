@@ -204,7 +204,7 @@ def run_first_10_extractor():
         # Run the extraction script
         result = subprocess.run([
             sys.executable, 
-            "extract_first_10_cars.py"
+            "src/scripts/extract_first_10_cars.py"
         ], capture_output=True, text=True)
         
         if result.returncode == 0:

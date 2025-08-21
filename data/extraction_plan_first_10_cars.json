@@ -1,0 +1,273 @@
+{
+  "extraction_plan": {
+    "source_url": "https://albacars.ae/buy-used-cars-uae",
+    "total_cars_available": 397,
+    "target_cars": 10,
+    "extraction_methods": [
+      "firecrawl_structured_data",
+      "playwright_image_carousel",
+      "inspection_modal_extraction"
+    ],
+    "created_at": "2025-01-15T12:00:00Z",
+    "expected_data_structure": {
+      "basic_info": ["make", "model", "year", "price", "monthly_payment", "mileage", "fuel_type", "transmission", "color"],
+      "specifications": ["engine", "power", "torque", "cylinders", "drivetrain", "fuel_efficiency"],
+      "features": ["safety", "comfort", "technology", "exterior", "interior"],
+      "images": ["carousel_images", "exterior_views", "interior_views", "engine_bay"],
+      "inspection_report": ["exterior_condition", "interior_condition", "mechanical_status", "test_drive_results"],
+      "service_history": ["maintenance_records", "accident_history", "warranty_status"],
+      "financing": ["monthly_payment", "down_payment_options", "loan_terms"]
+    }
+  },
+  "target_vehicles": [
+    {
+      "position": 1,
+      "make": "Volvo",
+      "model": "XC40",
+      "year": 2022,
+      "price_aed": 109999,
+      "monthly_payment_aed": 2154,
+      "mileage_km": 59000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10194-volvo-xc40",
+      "extraction_priority": "high",
+      "expected_images": 15,
+      "has_inspection_report": true,
+      "extraction_notes": "Luxury SUV with comprehensive features"
+    },
+    {
+      "position": 2,
+      "make": "GMC",
+      "model": "Sierra Denali Ultimate 6.2L",
+      "year": 2023,
+      "price_aed": 244999,
+      "monthly_payment_aed": 4798,
+      "mileage_km": 27000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10193-gmc-sierra-denali-ultimate-62l",
+      "extraction_priority": "high",
+      "expected_images": 20,
+      "has_inspection_report": true,
+      "extraction_notes": "High-end pickup truck with powerful engine"
+    },
+    {
+      "position": 3,
+      "make": "BMW",
+      "model": "X5",
+      "year": 2019,
+      "price_aed": 159999,
+      "monthly_payment_aed": 3133,
+      "mileage_km": 94000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10192-bmw-x5-40i-m-kit",
+      "extraction_priority": "high",
+      "expected_images": 18,
+      "has_inspection_report": true,
+      "extraction_notes": "Premium SUV with advanced features"
+    },
+    {
+      "position": 4,
+      "make": "Audi",
+      "model": "A5 S-Line",
+      "year": 2019,
+      "price_aed": 94999,
+      "monthly_payment_aed": 1860,
+      "mileage_km": 74000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10191-audi-a5",
+      "extraction_priority": "medium",
+      "expected_images": 16,
+      "has_inspection_report": true,
+      "extraction_notes": "Sport coupe with S-Line package"
+    },
+    {
+      "position": 5,
+      "make": "Toyota",
+      "model": "FJ Cruiser",
+      "year": 2021,
+      "price_aed": 109999,
+      "monthly_payment_aed": 2154,
+      "mileage_km": 112000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10189-toyota-fj-cruiser",
+      "extraction_priority": "medium",
+      "expected_images": 14,
+      "has_inspection_report": true,
+      "extraction_notes": "Off-road capable SUV"
+    },
+    {
+      "position": 6,
+      "make": "Mercedes-Benz",
+      "model": "E 300",
+      "year": 2020,
+      "price_aed": 149999,
+      "monthly_payment_aed": 2937,
+      "mileage_km": 59000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10188-mercedes-benz-e-class",
+      "extraction_priority": "high",
+      "expected_images": 17,
+      "has_inspection_report": true,
+      "extraction_notes": "Luxury sedan with premium features"
+    },
+    {
+      "position": 7,
+      "make": "Cadillac",
+      "model": "XT6 Premium Luxury",
+      "year": 2020,
+      "price_aed": 109999,
+      "monthly_payment_aed": 2154,
+      "mileage_km": 100000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10187-cadillac-xt6-premium-luxury",
+      "extraction_priority": "medium",
+      "expected_images": 15,
+      "has_inspection_report": true,
+      "extraction_notes": "Premium luxury SUV"
+    },
+    {
+      "position": 8,
+      "make": "BMW",
+      "model": "320i M-Sport",
+      "year": 2020,
+      "price_aed": 92999,
+      "monthly_payment_aed": 1821,
+      "mileage_km": 114000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10186-bmw-3-series-320i",
+      "extraction_priority": "medium",
+      "expected_images": 16,
+      "has_inspection_report": true,
+      "extraction_notes": "Sport sedan with M-Sport package"
+    },
+    {
+      "position": 9,
+      "make": "Mercedes-Benz",
+      "model": "GLC 200",
+      "year": 2021,
+      "price_aed": 194999,
+      "monthly_payment_aed": 3819,
+      "mileage_km": 35000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10185-mercedes-benz-glc",
+      "extraction_priority": "high",
+      "expected_images": 18,
+      "has_inspection_report": true,
+      "extraction_notes": "Compact luxury SUV"
+    },
+    {
+      "position": 10,
+      "make": "Mercedes-Benz",
+      "model": "AMG GT 53",
+      "year": 2022,
+      "price_aed": 369999,
+      "monthly_payment_aed": 7246,
+      "mileage_km": 74000,
+      "listing_url": "https://albacars.ae/buy-used-cars/vehicle/10184-mercedes-benz-amg-gt-gt-53",
+      "extraction_priority": "high",
+      "expected_images": 22,
+      "has_inspection_report": true,
+      "extraction_notes": "High-performance luxury coupe"
+    }
+  ],
+  "extraction_workflow": {
+    "step_1": {
+      "action": "scrape_listing_page",
+      "tool": "firecrawl_scrape",
+      "target": "https://albacars.ae/buy-used-cars-uae",
+      "extract": ["vehicle_urls", "basic_prices", "basic_specs"],
+      "validation": "ensure_10_urls_extracted"
+    },
+    "step_2": {
+      "action": "extract_individual_vehicle_data",
+      "tool": "firecrawl_extract",
+      "foreach": "vehicle_url",
+      "schema": {
+        "basic_info": {
+          "title": "string",
+          "price": "string",
+          "year": "number",
+          "mileage": "string",
+          "color": "string",
+          "fuel_type": "string",
+          "transmission": "string"
+        },
+        "specifications": {
+          "engine": "string",
+          "power": "string",
+          "torque": "string",
+          "cylinders": "number",
+          "drivetrain": "string",
+          "fuel_efficiency": "string"
+        },
+        "features": "array",
+        "service_contract": "object",
+        "warranty": "object"
+      }
+    },
+    "step_3": {
+      "action": "extract_carousel_images",
+      "tool": "playwright_comprehensive_scraper",
+      "foreach": "vehicle_url",
+      "extract": ["all_carousel_images", "cloudfront_urls"],
+      "image_processing": {
+        "filter_cloudfront": true,
+        "remove_query_params": false,
+        "verify_urls": true,
+        "extraction_method": "copy_link_address_from_carousel"
+      }
+    },
+    "step_4": {
+      "action": "extract_inspection_reports",
+      "tool": "inspection_report_extractor",
+      "foreach": "vehicle_url",
+      "extract": ["detailed_inspection", "modal_content"],
+      "click_actions": ["view_full_report_button"]
+    },
+    "step_5": {
+      "action": "compile_final_database",
+      "tool": "create_final_real_database",
+      "combine": ["structured_data", "images", "inspection_reports"],
+      "output": "data/first_10_cars_complete_database.json",
+      "validation": {
+        "min_cars": 10,
+        "min_images_per_car": 10,
+        "required_fields": ["make", "model", "price", "images", "inspection"]
+      }
+    }
+  },
+  "quality_assurance": {
+    "image_validation": {
+      "verify_cloudfront_urls": true,
+      "check_image_accessibility": true,
+      "minimum_images_per_car": 10
+    },
+    "data_completeness": {
+      "required_basic_fields": ["make", "model", "year", "price", "mileage"],
+      "required_specs": ["engine", "power", "fuel_type"],
+      "required_features": "minimum_5_features"
+    },
+    "inspection_reports": {
+      "verify_modal_extraction": true,
+      "check_report_completeness": true,
+      "validate_condition_scores": true
+    }
+  },
+  "expected_output": {
+    "filename": "data/first_10_cars_complete_database.json",
+    "estimated_size": "50-100KB",
+    "total_images_expected": 160,
+    "total_features_expected": 100,
+    "extraction_time_estimate": "5-8 minutes",
+    "success_criteria": {
+      "cars_extracted": 10,
+      "images_per_car": ">= 10",
+      "data_completeness": ">= 95%",
+      "working_image_urls": ">= 98%"
+    }
+  },
+  "execution_commands": {
+    "manual_execution": [
+      "python3 src/alba_cars_scraper.py",
+      "python3 src/playwright_comprehensive_scraper.py", 
+      "python3 src/inspection_report_extractor.py",
+      "python3 utils/create_final_real_database.py"
+    ],
+    "automated_execution": [
+      "python3 main.py",
+      "# Select option 3 (Comprehensive Scraper)",
+      "# Or use the extraction workflow script"
+    ]
+  }
+} 
